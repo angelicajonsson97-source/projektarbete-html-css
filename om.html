@@ -3,19 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/about.css">
     <title>om mig</title>
 </head>
 <body>
     <header>
         <h1>Välkommen till min om mig-sida</h1>
-        <nav>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav class="menu">
             <ul>
                 <li><a href="index.html">Startsida</a></li>
                 <li><a href="om.html">Om mig</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="kontakt.html">Kontakta mig</a></li>
             </ul>
         </nav>
     </header>
-
+    <main>
+        <section class="about-me">
+            <h2>Om mig</h2>
+            <p>Jag heter Angelica Jonsson Landström och är en passionerad webbutvecklare med erfarenhet inom både front-end och back-end utveckling. Min resa inom webbutveckling började när jag insåg hur mycket jag älskar att skapa användarvänliga och estetiskt tilltalande webbplatser.</p>
+            <p>Utöver mina tekniska färdigheter har jag en bakgrund inom marknadsföring, vilket ger mig en unik förståelse för hur man skapar webbplatser som inte bara ser bra ut, utan också konverterar besökare till kunder.</p>
+        </section>
+    </main>
+<footer>
+    <article>
+        <p>Email: <a href="mailto:Angelica.jonssonlandstrom@outlook.com">Angelica.jonssonlandstrom@outlook.com</a></p>
+    | <a href="#">Github</a> |
+        <a href="#">LinkedIn</a>
+    </article>
+    <p>&copy; 2025 Angelica Jonsson Landström</p>
+</footer>
 </body>
 </html>

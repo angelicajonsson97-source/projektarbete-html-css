@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>startsida</title>
 </head>
 <body>
     <header>
-        <h1>Välkommen till min startsida</h1>
-       
+        <h1>Angelica Jonsson Landström</h1>
         <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <nav class="menu">
@@ -21,19 +21,30 @@
         </nav>
     </header>
 <main>
-    <section>
-        <h2>Introduktion</h2>
+    <section class="introduction">
+        <h2>Välkommen</h2>
         <p>Detta är min startsida där du kan hitta information om mig och hur du kan kontakta mig.</p>
     </section> 
-    <section>
-        <h2>lite om mig</h2>
-        <p>Jag erbjuder olika tjänster inom webbutveckling och design. Kontakta mig för mer information.</p>
-        <a href="om.html">Läs mer om mig</a>
+    <section class="profile">
+        <img src="image/IMG_9999.JPG" alt="Angelica Jonsson Landström" loading="lazy">
+        <article class="profile-text">
+            <h2>Lite om mig</h2>
+            <p>Jag har tidigare arbetat som Marketing Automation Specialist, där jag fick möjlighet att kombinera teknik med kommunikation. Genom det arbetet växte mitt intresse för webbutveckling, vilket ledde till att jag påbörjade en utbildning inom fullstack-utveckling.</p>
+        <a href="om.html">Läs mer om mig och mina projekt</a>
+        </article>
     </section>
-    <section>
-        <h2>kontakta mig</h2>
-        <p>Håll dig uppdaterad med de senaste nyheterna och uppdateringarna från mig.</p>
+    <section class="contact-info">
+        <h2>Kontakta mig</h2>
+        <p>Vill du komma i kontakt med mig? fyll i formuläret på <a href="kontakt.html">Kontakta mig</a> sidan. Eller skicka ett mail till mig direkt email: <a href="mailto:Angelica.jonssonlandstrom@outlook.com">Angelica.jonssonlandstrom@outlook.com</a></p>
     </section>
 </main>
+<footer>
+    <article>
+        <p>Email: <a href="mailto:Angelica.jonssonlandstrom@outlook.com">Angelica.jonssonlandstrom@outlook.com</a></p>
+    | <a href="#">Github</a> |
+        <a href="#">LinkedIn</a>
+    </article>
+    <p>&copy; 2025 Angelica Jonsson Landström</p>
+</footer>
 </body>
 </html>

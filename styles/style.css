@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 :root {
     --primary-color: #093824;
     --secondary-color: #fff3f3;
@@ -13,57 +14,148 @@
     --secondary-text-color: #212121;
     --link-color: #093824;
     --font-family: 'Arial, sans-serif';
+    
 }
  
 body {
     font-family: var(--font-family); 
     background-color: var(--secondary-background-color);
     color: var(--text-color);
-}
-nav {
-    background-color: var(--background-color);
-    padding: 1rem;
- a {
-    color: var(--secondary-text-color);
-    text-decoration: none;
-    margin-right: 1rem;
-}
- li {
-    display: inline;
-    list-style: none;
-}
+    font-size: 20px;
 }
 
+/* Navigation styles */
+#menu-toggle {
+    display: none;
+}
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+  color: var(--secondary-color);
+  padding: 0.5rem;
+}
+.menu ul {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--background-color);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  font-size: 24px;
+  font-weight: bold; 
+  font-family: var(--font-family);
+  
+}
+.menu a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.menu li {
+  list-style: none;
+  
+} 
+#menu-toggle:checked + .menu-icon + .menu ul {
+  display: flex;
+}
+
+
+/* Layout styles */
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 1rem;
 }
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: var(--secondary-background-color);
-
-}
-section {
-    background-color: var(--background-color);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+h1 {
+    margin: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
-section a {
-    margin-bottom: 0.5rem;
-    color: var(--link-color);
-}
 
+/* Footer styles */
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     margin-top: 1rem;
+}
 
+  footer article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    color: var(--secondary-color);
+ }
+ footer article p, footer article a {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+footer p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Responsive styles */
+/* Desktop: visa meny alltid och dölj hamburgarikonen */
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold; 
+    font-family: var(--font-family);
+  }
+  .menu a {
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 2rem;
+
+  }
+
+  .menu a:hover {
+    background-color: var(--link-color);
+    color: var(--secondary-color);
+    border-radius: 8px;
+  }
+ 
+  footer {
+    padding: 2rem;
+    min-height: 30vh;
+    color: var(--secondary-color);
+    font-size: 2rem;
+  }
+
+  footer article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    color: var(--secondary-color);
+ }
+ footer article p, footer article a {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+footer p {
+    font-size: 1.5rem;
+    color: var(--secondary-color);  
+}
 }
