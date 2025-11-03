@@ -11,9 +11,40 @@ h2 {
     font-size: 2rem;
     text-align: center;
 }
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 
 @media (min-width: 768px) {
-    section.about-me {
+   main.about {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .profile-image {
+    flex: 0 0 auto;
+  }
+
+  .profile-image img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .about-me {
+    flex: 1;
     max-width: 1200px;
     min-height: 500px;
     margin: 2rem auto;

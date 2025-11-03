@@ -41,11 +41,6 @@ section a {
   text-align: center;
 }
 
-.profile img {
-  width: 100%;
-  max-width: 150px;
-  border-radius: 8px;
-}
 .profile-text {
   text-align: left;
 }
