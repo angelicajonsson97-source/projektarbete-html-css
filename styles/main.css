@@ -102,4 +102,11 @@ section p {
   .profile-text {
     flex: 1;
   }
+  .profile-text a {
+    font-size: 1.5rem;
+  }
+  .contact-info a {
+    font-size: 1.5rem;
+
+  }
 }
