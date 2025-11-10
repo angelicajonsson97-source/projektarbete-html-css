@@ -12,6 +12,9 @@ Designen är mobil-först med tydlig typografi, hög kontrast och intuitiv navig
 # Css-mönster
 
 hamburgarmeny
-Formulär: HTML5-attribut (required, pattern) + stylade :valid/:invalid-tillstånd.
 
-kontakta mig formuläret ej fungerande. då det ej finns något js script. vilket jag ej får använda i denna uppgift men tanken är att det ska skickas direkt till min epost.
+
+# andra delar 
+Formulär
+
+kontakta mig formuläret ej fungerande. då det ej finns något js script. vilket jag ej får använda i denna uppgift men tanken är att det ska skickas direkt till mig och användaren får bekräftelse mail och hamnar på taksida 
