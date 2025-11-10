@@ -17,4 +17,8 @@ hamburgarmeny
 # andra delar 
 Formulär
 
-kontakta mig formuläret ej fungerande. då det ej finns något js script. vilket jag ej får använda i denna uppgift men tanken är att det ska skickas direkt till mig och användaren får bekräftelse mail och hamnar på taksida 
+Formuläret på sidan "Kontakta mig" är kopplat till en tacksida via action="tack.html". I dagsläget finns ingen faktisk tacksida, men strukturen är på plats för att simulera ett formulärflöde.
+Eftersom uppgiften inte tillåter JavaScript eller backend-lösningar, är formuläret inte funktionellt – det skickar inte något meddelande. Tanken är att det i en riktig implementation skulle:
+- Skicka data direkt till min e-postadress
+- Visa en tacksida efter inskickat formulär
+- Eventuellt skicka en bekräftelse till användaren
